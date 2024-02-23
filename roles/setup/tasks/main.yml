@@ -1,4 +1,4 @@
-- import_tasks: test_ssh.yml
+# - import_tasks: test_ssh.yml
 # - import_tasks: unwanted_apps.yml
 # - import_tasks: apt.yml
 # - import_tasks: ssh.yml

@@ -49,9 +49,9 @@
     dest: /etc/dconf/db/local.d/00-autologout
     content: |
       [org/gnome/settings-daemon/plugins/power]
-      sleep-inactive-ac-timeout=3600
+      sleep-inactive-ac-timeout=900
       sleep-inactive-ac-type='logout'
-      sleep-inactive-battery-timeout=3600
+      sleep-inactive-battery-timeout=900
       sleep-inactive-battery-type='logout'
 
 
