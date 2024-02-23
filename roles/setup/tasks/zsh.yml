@@ -1,0 +1,34 @@
+- name: Install Zsh
+  become: true
+  ansible.builtin.package:
+    name: zsh
+    state: present
+
+- name: Download Oh My Zsh install script
+  become: true
+  ansible.builtin.get_url:
+    url: "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
+    dest: "/tmp/install_oh_my_zsh.sh"
+    mode: 0755
+
+- name: Copy .zshrc file to /etc/skel
+  become: true
+  ansible.builtin.copy:
+    src: "./zsh/.zshrc"
+    dest: "/etc/skel/.zshrc"
+    mode: 0644
+
+- name: Run Oh My Zsh install script for bocal user
+  become: true
+  ansible.builtin.command: sh /tmp/install_oh_my_zsh.sh
+  environment:
+    HOME: /root
+    USER: root
+  when: ansible_user == 'bocal'
+
+- name: Copy .zshrc file to /root
+  become: true
+  ansible.builtin.copy:
+    src: "./zsh/.zshrc"
+    dest: "/root/.zshrc"
+    mode: 0644

@@ -1,0 +1,26 @@
+# - import_tasks: test_ssh.yml
+# - import_tasks: unwanted_apps.yml
+# - import_tasks: apt.yml
+# - import_tasks: ssh.yml
+# - import_tasks: chrom.yml
+# - import_tasks: chromium.yml
+# - import_tasks: time_zone.yml
+# - import_tasks: cmd_tools.yml
+# - import_tasks: discord.yml
+# - import_tasks: golang.yml
+# - import_tasks: editors.yml
+# - import_tasks: dpkg.yml
+# - import_tasks: zsh.yml
+# - import_tasks: background.yml
+# - import_tasks: permissions.yml
+# - import_tasks: lockscreen.yml
+- import_tasks: user.yml
+# - import_tasks: password_bocal.yml
+
+### START - STOP 
+# - import_tasks: shutdown.yml
+# - import_tasks: reboot.yml
+
+
+### DO NOT UNCOMMENT! - DANGER ZONE
+# - import_tasks: clean_storage.yml

@@ -1,0 +1,5 @@
+- name: Clean storage of the machine except bocal 
+  become: true
+  ansible.builtin.shell:
+    cmd: sudo find /home -maxdepth 1 -mindepth 1 -type d ! -name bocal -exec rm -r {} \;
+

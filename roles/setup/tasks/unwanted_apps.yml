@@ -1,0 +1,89 @@
+- name: remove Rhythmbox
+  become: true
+  ansible.builtin.apt:
+    name: rhythmbox
+    state: absent
+
+- name: remove LibreOffice
+  become: true
+  ansible.builtin.apt:
+    name: libreoffice*
+    state: absent
+
+- name: remove Thunderbird
+  become: true
+  ansible.builtin.apt:
+    name: thunderbird
+    state: absent
+
+- name: remove Gnome Music
+  become: true
+  ansible.builtin.apt:
+    name: gnome-music
+    state: absent
+
+- name: remove startup Applications
+  become: true
+  ansible.builtin.apt:
+    name: gnome-startup-applications
+    state: absent
+
+- name: remove Mahjong
+  become: true
+  ansible.builtin.apt:
+    name: gnome-mahjongg
+    state: absent
+
+- name: remove Sudoku
+  become: true
+  ansible.builtin.apt:
+    name: gnome-sudoku
+    state: absent
+
+- name: remove Remmina
+  become: true
+  ansible.builtin.apt:
+    name: remmina
+    state: absent
+
+- name: remove Aisleriot
+  become: true
+  ansible.builtin.apt:
+    name: aisleriot
+    state: absent
+
+- name: remove Mines
+  become: true
+  ansible.builtin.apt:
+    name: gnome-mines
+    state: absent
+
+- name: remove shotwell
+  become: true
+  ansible.builtin.apt:
+    name: shotwell
+    state: absent
+
+- name: remove document scanner
+  become: true
+  ansible.builtin.apt:
+    name: simple-scan
+    state: absent
+
+- name: remove transmission
+  become: true
+  ansible.builtin.apt:
+    name: transmission
+    state: absent
+
+- name: remove Startup Disk Creator
+  become: true
+  ansible.builtin.apt:
+    name: gnome-disk-utility
+    state: absent
+
+- name: remove Software & Updates
+  become: true
+  ansible.builtin.apt:
+    name: software-properties-gtk-gnome
+    state: absent

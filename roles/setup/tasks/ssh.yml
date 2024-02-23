@@ -1,0 +1,8 @@
+- name: Add other ssh public key to access the machines 
+  tags: [ssh]
+  loop: "{{ extra_ssh_keys }}"
+  ansible.builtin.lineinfile:
+    path: /home/bocal/.ssh/authorized_keys
+    line: "{{ item }}"
+    state: present
+

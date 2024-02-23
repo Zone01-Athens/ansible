@@ -1,0 +1,33 @@
+newpassword: "zone01athens"
+studentpassword: "student"
+
+ansible_user: "bocal"
+
+extra_ssh_keys:
+  - here you add the public ssh key
+
+go_pkgs:
+  - github.com/uudashr/gopkgs/v2/cmd/gopkgs@latest       
+  - github.com/cweill/gotests/gotests@latest             
+  - github.com/fatih/gomodifytags@latest                 
+  - github.com/josharian/impl@latest                     
+  - github.com/haya14busa/goplay/cmd/goplay@latest       
+  - github.com/go-delve/delve/cmd/dlv@latest             
+  - github.com/go-delve/delve/cmd/dlv@master             
+  - honnef.co/go/tools/cmd/staticcheck@latest       
+  - golang.org/x/tools/gopls@latest                      
+  - mvdan.cc/gofumpt@latest
+  - golang.org/x/tools/cmd/goimports@latest
+ 
+go_pkg:
+  - github.com/01-edu/z01@latest
+
+go_extensions:
+  - golang.google.cn/x/tools/gopls@latest
+
+packages:
+  - libappindicator3-1
+  - libindicator7
+
+folders_to_keep:
+  - "/home/bocal"

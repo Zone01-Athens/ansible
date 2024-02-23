@@ -1,0 +1,8 @@
+- name: Create user
+  become: true
+  ansible.builtin.user:
+    create_home: yes
+    name: student
+    password: "{{ studentpassword|password_hash('sha512') }}"
+    shell: /usr/bin/zsh
+    uid: 2001
