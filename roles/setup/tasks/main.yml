@@ -1,4 +1,4 @@
-# - import_tasks: test_ssh.yml
+- import_tasks: test_ssh.yml
 # - import_tasks: unwanted_apps.yml
 # - import_tasks: apt.yml
 # - import_tasks: ssh.yml
@@ -14,7 +14,7 @@
 # - import_tasks: background.yml
 # - import_tasks: permissions.yml
 # - import_tasks: lockscreen.yml
-- import_tasks: user.yml
+# - import_tasks: user.yml
 # - import_tasks: password_bocal.yml
 
 ### START - STOP 
