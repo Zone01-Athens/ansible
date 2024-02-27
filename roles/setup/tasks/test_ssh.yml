@@ -6,9 +6,3 @@
 - name: debug
   ansible.builtin.debug:
     msg: "{{ test_ssh }}"
-
-
-- name: test unreachable
-  ansible.builtin.ping:
-  register: test_ssh
-  ignore_unreachable: true
