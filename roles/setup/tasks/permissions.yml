@@ -1,4 +1,4 @@
 - name: Set proper permissions on /home directories
   become: true
   ansible.builtin.shell:
-    cmd: "chmod 701 /home"
+    cmd: "chmod 707 /home"
